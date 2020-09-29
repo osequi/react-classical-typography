@@ -31,7 +31,12 @@ const useStyles = makeStyles(() => ({
 const Demo = (props) => {
   const { container } = useStyles(props);
 
-  return <Grid>Demo</Grid>;
+  return (
+    <div className={clsx("Demo", container)}>
+      <Grid displayVerticalRhytm={true} displayHorizontalRhytm={true} />
+      Demo
+    </div>
+  );
 };
 
 Demo.propTypes = propTypes;

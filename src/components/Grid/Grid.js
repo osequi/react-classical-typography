@@ -43,8 +43,8 @@ const propTypes = {
 const defaultProps = {
   fontSize: "100%",
   lineHeight: "1.25",
-  displayHorizontalRhytm: true,
-  displayVerticalRhytm: true,
+  displayHorizontalRhytm: false,
+  displayVerticalRhytm: false,
   numberOfHorizontalLines: 100,
   numberOfVerticalLines: 100,
   lineColor: "lightgrey",
@@ -149,6 +149,7 @@ const Grid = (props) => {
     numberOfHorizontalLines,
     numberOfVerticalLines,
     lineColor,
+    children,
   } = props;
 
   const {
@@ -183,6 +184,7 @@ const Grid = (props) => {
       {globalSettings(props)}
       {horizontalLines}
       {verticalLines}
+      {children}
     </>
   );
 };
