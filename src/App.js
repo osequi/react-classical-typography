@@ -1,4 +1,6 @@
 import React from "react";
-const App = () => "App";
+import Demo from "./components/Demo";
+
+const App = () => <Demo />;
 
 export default App;
