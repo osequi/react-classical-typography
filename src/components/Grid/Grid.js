@@ -45,7 +45,7 @@ const defaultProps = {
   lineHeight: "1.25",
   displayHorizontalRhytm: true,
   displayVerticalRhytm: true,
-  numberOfHorizontalLines: 50,
+  numberOfHorizontalLines: 100,
   numberOfVerticalLines: 100,
   lineColor: "lightgrey",
 };
@@ -75,6 +75,7 @@ const useStyles = makeStyles(() => ({
     display: "block",
     boxSizing: "border-box",
     borderColor: props.lineColor ? props.lineColor : "transparent",
+    borderWidth: 1,
   }),
 
   verticalRhythmLine: {
@@ -124,7 +125,12 @@ const drawLines = (props) => {
 
   const lines = Array.from({ length: numberOfLines }, (v, i) => i).map(
     (item) => {
-      return <span className={clsx("Line", line, rhythmLine)} />;
+      return (
+        <span
+          key={shortid.generate()}
+          className={clsx("Line", line, rhythmLine)}
+        />
+      );
     }
   );
 
