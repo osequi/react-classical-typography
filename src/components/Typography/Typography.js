@@ -1,4 +1,4 @@
-import React from "react";
+import React, { createElement } from "react";
 import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/styles";
 import clsx from "clsx";
@@ -23,7 +23,7 @@ const variants = ["default", "body", "title"];
  */
 const propTypes = {
   /**
-   * What to display.
+   * What kind of text to display.
    * It's like the `text-style()` mixin from the old framework.
    * Tries to follow the Material UI syntax.
    * @type {string}
@@ -31,6 +31,17 @@ const propTypes = {
    * @see https://material-ui.com/components/typography/#typography
    */
   variant: PropTypes.oneOf(variants),
+  /**
+   * In which container element to display.
+   * Preferably inside a Semantic Element
+   * @type {element}
+   */
+  component: PropTypes.element,
+  /**
+   * What to display
+   * @type {any}
+   */
+  children: PropTypes.any,
   /**
    * Setting up the Modular Scale
    * @type {object}
@@ -50,6 +61,8 @@ const defaultProps = {
   /**
    * Perfect fourth
    */
+  elemnt: "div",
+  children: null,
   scale: {
     base: [1],
     ratio: 1.333,
@@ -77,9 +90,14 @@ const useStyles = makeStyles(() => ({
  * Displays the component
  */
 const Typography = (props) => {
-  const { default, body, title } = useStyles(props);
+  const { variant, element, children } = props;
+  const { default: defaultKlass, body, title } = useStyles(props);
 
-  return <div className={clsx("Typography", container)}>Typography</div>;
+  const klasses = [defaultKlass, body, title];
+  const index = variants.findIndex((item) => item === variant);
+  const props2 = { className: clsx(klasses[index]) };
+
+  return createElement(element, props2, children);
 };
 
 Typography.propTypes = propTypes;

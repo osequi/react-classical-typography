@@ -7,6 +7,8 @@ import clsx from "clsx";
  * Imports other components and hooks
  */
 import Grid from "../Grid";
+import Typography from "../Typography";
+import { H1 } from "@bit/osequi.test.semantic-elements";
 
 /**
  * Defines the prop types
@@ -34,7 +36,9 @@ const Demo = (props) => {
   return (
     <div className={clsx("Demo", container)}>
       <Grid displayVerticalRhytm={true} displayHorizontalRhytm={true} />
-      Demo
+      <Typography variant="title" component={H1}>
+        Demo
+      </Typography>
     </div>
   );
 };
