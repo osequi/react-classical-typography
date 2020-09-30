@@ -36,7 +36,7 @@ const Demo = (props) => {
   return (
     <div className={clsx("Demo", container)}>
       <Grid displayVerticalRhytm={true} displayHorizontalRhytm={true} />
-      <Typography variant="title" component="h1">
+      <Typography variant="title" component={Headings}>
         Demo
       </Typography>
     </div>

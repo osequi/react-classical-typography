@@ -7,6 +7,7 @@ import { ms } from "modularscale-js";
 /**
  * Imports other components and hooks
  */
+import Headings from "@bit/osequi.test.headings";
 
 /**
  * Defines the text types.
