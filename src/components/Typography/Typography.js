@@ -7,7 +7,6 @@ import { ms } from "modularscale-js";
 /**
  * Imports other components and hooks
  */
-import { H1, H2, H3, H4, H5, H6 } from "@bit/osequi.test.semantic-elements";
 
 /**
  * Defines the text types.
@@ -74,15 +73,15 @@ const defaultProps = {
  */
 const useStyles = makeStyles(() => ({
   default: {
-    fontSize: (props) => ms(0, props.scale),
+    fontSize: "1em",
   },
 
   body: {
-    fontSize: (props) => ms(0, props.scale),
+    fontSize: "1em",
   },
 
   title: {
-    fontSize: (props) => ms(1, props.scale),
+    fontSize: "1.25em",
   },
 }));
 
@@ -90,14 +89,14 @@ const useStyles = makeStyles(() => ({
  * Displays the component
  */
 const Typography = (props) => {
-  const { variant, element, children } = props;
+  const { variant, component, children } = props;
   const { default: defaultKlass, body, title } = useStyles(props);
 
   const klasses = [defaultKlass, body, title];
   const index = variants.findIndex((item) => item === variant);
   const props2 = { className: clsx(klasses[index]) };
 
-  return createElement(element, props2, children);
+  return createElement(component, props2, children);
 };
 
 Typography.propTypes = propTypes;
