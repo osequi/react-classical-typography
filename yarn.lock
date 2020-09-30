@@ -1025,10 +1025,128 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@bit/osequi.test.headings@^0.1.2":
+"@bit/osequi.test.article@0.1.3":
+  version "0.1.3"
+  resolved "https://node.bit.dev/osequi.test.article/-/osequi.test.article-0.1.3.tgz#3229e874179348295e4c04d0f0ec92ee923a9bf8"
+  dependencies:
+    "@bit/osequi.test.semantic-elements" "0.1.3"
+    "@testing-library/react" "^9.3.2"
+    react "^16.13.1"
+
+"@bit/osequi.test.aside@0.1.3":
+  version "0.1.3"
+  resolved "https://node.bit.dev/osequi.test.aside/-/osequi.test.aside-0.1.3.tgz#d48ce1448b7792f28011657da83b3cbbe1a7c606"
+  dependencies:
+    "@bit/osequi.test.semantic-elements" "0.1.3"
+    "@testing-library/react" "^9.3.2"
+    react "^16.13.1"
+
+"@bit/osequi.test.footer@0.1.3":
+  version "0.1.3"
+  resolved "https://node.bit.dev/osequi.test.footer/-/osequi.test.footer-0.1.3.tgz#659e86882c22d2b1f5f7246099fe98b496f6a6a8"
+  dependencies:
+    "@bit/osequi.test.semantic-elements" "0.1.3"
+    "@testing-library/react" "^9.3.2"
+    react "^16.13.1"
+
+"@bit/osequi.test.h1@0.1.2":
+  version "0.1.2"
+  resolved "https://node.bit.dev/osequi.test.h1/-/osequi.test.h1-0.1.2.tgz#7d5992706f7ee1258d58b81075d69e66544342aa"
+  dependencies:
+    "@bit/osequi.test.headings" "0.1.2"
+    "@testing-library/react" "^9.3.2"
+    react "^16.13.1"
+
+"@bit/osequi.test.h2@0.1.2":
+  version "0.1.2"
+  resolved "https://node.bit.dev/osequi.test.h2/-/osequi.test.h2-0.1.2.tgz#cfd1f081f4a4beae4ad2deb3435918db6b7e8a06"
+  dependencies:
+    "@bit/osequi.test.headings" "0.1.2"
+    "@testing-library/react" "^9.3.2"
+    react "^16.13.1"
+
+"@bit/osequi.test.h3@0.1.2":
+  version "0.1.2"
+  resolved "https://node.bit.dev/osequi.test.h3/-/osequi.test.h3-0.1.2.tgz#b333f0df24025f207c53bb1ca3075a7690641d77"
+  dependencies:
+    "@bit/osequi.test.headings" "0.1.2"
+    "@testing-library/react" "^9.3.2"
+    react "^16.13.1"
+
+"@bit/osequi.test.h4@0.1.2":
+  version "0.1.2"
+  resolved "https://node.bit.dev/osequi.test.h4/-/osequi.test.h4-0.1.2.tgz#c15c042ffd3f3b1ab7cf8fc5a34d816782d6867c"
+  dependencies:
+    "@bit/osequi.test.headings" "0.1.2"
+    "@testing-library/react" "^9.3.2"
+    react "^16.13.1"
+
+"@bit/osequi.test.h5@0.1.2":
+  version "0.1.2"
+  resolved "https://node.bit.dev/osequi.test.h5/-/osequi.test.h5-0.1.2.tgz#c15000379c5525f817b39b1fe9acda1add6afbd7"
+  dependencies:
+    "@bit/osequi.test.headings" "0.1.2"
+    "@testing-library/react" "^9.3.2"
+    react "^16.13.1"
+
+"@bit/osequi.test.h6@0.1.2":
+  version "0.1.2"
+  resolved "https://node.bit.dev/osequi.test.h6/-/osequi.test.h6-0.1.2.tgz#9708d9dd04cfe7d4304e49c117387adac89c0961"
+  dependencies:
+    "@bit/osequi.test.headings" "0.1.2"
+    "@testing-library/react" "^9.3.2"
+    react "^16.13.1"
+
+"@bit/osequi.test.header@0.1.3":
+  version "0.1.3"
+  resolved "https://node.bit.dev/osequi.test.header/-/osequi.test.header-0.1.3.tgz#a8009cd796b4a201ac5c9e07b90b170d44486f68"
+  dependencies:
+    "@bit/osequi.test.semantic-elements" "0.1.3"
+    "@testing-library/react" "^9.3.2"
+    react "^16.13.1"
+
+"@bit/osequi.test.headings@0.1.2", "@bit/osequi.test.headings@^0.1.2":
   version "0.1.2"
   resolved "https://node.bit.dev/osequi.test.headings/-/osequi.test.headings-0.1.2.tgz#c1ae0428beab10327f03ebd7d2a81d77dd51704a"
   dependencies:
+    prop-types "15.7.2"
+    react "^16.13.1"
+
+"@bit/osequi.test.nav@0.1.3":
+  version "0.1.3"
+  resolved "https://node.bit.dev/osequi.test.nav/-/osequi.test.nav-0.1.3.tgz#396f43d147ab48296456808d627deab8525278ca"
+  dependencies:
+    "@bit/osequi.test.semantic-elements" "0.1.3"
+    "@testing-library/react" "^9.3.2"
+    react "^16.13.1"
+
+"@bit/osequi.test.section@0.1.3":
+  version "0.1.3"
+  resolved "https://node.bit.dev/osequi.test.section/-/osequi.test.section-0.1.3.tgz#6e0efb640494b82376104af064c273a7ecd57278"
+  dependencies:
+    "@bit/osequi.test.semantic-elements" "0.1.3"
+    "@testing-library/react" "^9.3.2"
+    react "^16.13.1"
+
+"@bit/osequi.test.semantic-elements@0.1.3", "@bit/osequi.test.semantic-elements@^0.1.3":
+  version "0.1.3"
+  resolved "https://node.bit.dev/osequi.test.semantic-elements/-/osequi.test.semantic-elements-0.1.3.tgz#9301789aaa5fb32efb99e5564ab51b77a158b046"
+  dependencies:
+    "@bit/osequi.test.article" "0.1.3"
+    "@bit/osequi.test.aside" "0.1.3"
+    "@bit/osequi.test.footer" "0.1.3"
+    "@bit/osequi.test.h1" "0.1.2"
+    "@bit/osequi.test.h2" "0.1.2"
+    "@bit/osequi.test.h3" "0.1.2"
+    "@bit/osequi.test.h4" "0.1.2"
+    "@bit/osequi.test.h5" "0.1.2"
+    "@bit/osequi.test.h6" "0.1.2"
+    "@bit/osequi.test.header" "0.1.3"
+    "@bit/osequi.test.headings" "0.1.2"
+    "@bit/osequi.test.nav" "0.1.3"
+    "@bit/osequi.test.section" "0.1.3"
+    "@testing-library/react" "^9.3.2"
+    lodash "^4.17.20"
     prop-types "15.7.2"
     react "^16.13.1"
 
@@ -5973,7 +6091,7 @@ lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
 
-"lodash@>=3.5 <5", lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.5:
+"lodash@>=3.5 <5", lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.5:
   version "4.17.20"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
 

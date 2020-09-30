@@ -9,6 +9,7 @@ import clsx from "clsx";
 import Grid from "../Grid";
 import Typography from "../Typography";
 import Headings from "@bit/osequi.test.headings";
+import { H1 } from "@bit/osequi.test.semantic-elements";
 
 /**
  * Defines the prop types

@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@bit/osequi.test.headings": "^0.1.2",
+    "@bit/osequi.test.semantic-elements": "^0.1.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
